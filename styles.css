@@ -1,0 +1,100 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: "Anek Kannada", Arial, sans-serif;
+    background-color: #eaeaea;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-family: "Noto Serif Kannada", serif;
+    font-size: 2.5em;
+    color: #333;
+}
+
+header .tagline {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Menu Bar */
+.menu-bar {
+    background-color: #9f9f9f;
+    padding: 10px 0;
+}
+
+.menu-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.menu-bar li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.menu-bar a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Divider Line */
+.divider {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 20px 0;
+}
+
+/* Content Section */
+.content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.footer {
+    background-color: #9f9f9f;
+    padding: 10px 0;
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+.footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.footer li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+
+}
