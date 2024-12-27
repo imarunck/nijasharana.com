@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ambigara Chowdayya</title>
+    <title>ವಚನಗಳು</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Anek+Kannada:wght@100..800&family=Noto+Serif+Kannada:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="vachanagalu.css">
+
 </head>
 <body>
     <div class="container">
@@ -24,7 +25,6 @@
                 <li><button onclick="location.href='#menu2'">ಅಂಬಿಗರ ಚೌಡಯ್ಯ ಚರಿತ್ರೆ</button></li>
                 <li><button onclick="location.href='#menu3'">ವಚನಗಳು</button></li>
                 <li><button onclick="location.href='#menu4'">ಚಿತ್ರ ಸಂಪುಟ</button></li>
-           
             </ul>
         </nav>
 
@@ -33,8 +33,12 @@
 
         <!-- Content Section -->
         <main class="content">
-            <p>Welcome to the website! This is the content space where the main text or information will be displayed.</p>
+            <p>Welcome to the space where the main text or information will be displayed.</p>
+            <!-- Poem Grid will be populated here dynamically -->
+            <section class="poem-grid" id="poemGrid"></section>
         </main>
+        
+
 
         <!-- Footer -->
         <footer class="footer">
@@ -45,6 +49,37 @@
                 <li><button onclick="location.href='#link4'">&copy;ಕಾಪಿರೈಟ್</button></li>
             </ul>
         </footer>
+
+        <script>
+            // Fetch poems from JSON file and display them
+            fetch('poems.json')
+                .then(response => response.json())
+                .then(poems => {
+                    const poemGrid = document.getElementById('poemGrid');
+                    poems.forEach(poem => {
+                        const tile = document.createElement('div');
+                        tile.className = 'poem-tile';
+        
+                        // Poem title and content
+                        const fullText = poem.content;
+        
+                        // Add poem title and the scrollable container for the full poem
+                        tile.innerHTML = `
+                            <h2>${poem.title}</h2>
+                            <div class="poem-scrollable">
+                                ${fullText}
+                            </div>
+                        `;
+                        poemGrid.appendChild(tile);
+                    });
+                })
+                .catch(error => console.error('Error loading poems:', error));
+        </script>
+        
+        
+        
+        
+        
         
         
     </div>
