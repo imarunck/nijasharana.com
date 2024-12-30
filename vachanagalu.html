@@ -3,28 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ವಚನಗಳು</title>
+    <title>vachanagalu</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Anek+Kannada:wght@100..800&family=Noto+Serif+Kannada:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="vachanagalu.css">
+    <link rel="stylesheet" href="styles.css">
 
 </head>
 <body>
     <div class="container">
         <!-- Website Name and Tagline -->
         <header>
-            <h1>ಅಂಬಿಗರ ಚೌಡಯ್ಯ</h1>
+            <a href="index.html" id="logo-link"><h1>ಅಂಬಿಗರ ಚೌಡಯ್ಯ</h1></a>
             <h2 class="tagline">ವಚನಕಾರ ನಿಜಶರಣ ಅಂಬಿಗರ ಚೌಡಯ್ಯರ ಕುರಿತು</h2>
         </header>
 
         <!-- Menu Bar -->
         <nav class="menu-bar">
             <ul>
-                <li><button onclick="location.href='#menu1'">ಮುಖ ಪುಟ</button></li>
-                <li><button onclick="location.href='#menu2'">ಅಂಬಿಗರ ಚೌಡಯ್ಯ ಚರಿತ್ರೆ</button></li>
-                <li><button onclick="location.href='#menu3'">ವಚನಗಳು</button></li>
-                <li><button onclick="location.href='#menu4'">ಚಿತ್ರ ಸಂಪುಟ</button></li>
+                <li><a href="index.html">ಮುಖ ಪುಟ</a></li>
+                <li><a href="Ambigara-Chowdaiya.html">ಅಂಬಿಗರ ಚೌಡಯ್ಯ ಚರಿತ್ರೆ</a></li>
+                <li><a href="vachanagalu.html">ವಚನಗಳು</a></li>
+                <li><a href="gallery.html">ಚಿತ್ರ ಸಂಪುಟ</a></li>           
             </ul>
         </nav>
 
@@ -33,7 +33,7 @@
 
         <!-- Content Section -->
         <main class="content">
-            <p>ವಚನಕಾರ ನಿಜಶರಣ ಅಂಬಿಗರ ಚೌಡಯ್ಯರ ವಚನಗಳು.</p>
+            <h2>ವಚನಕಾರ ನಿಜಶರಣ ಅಂಬಿಗರ ಚೌಡಯ್ಯರ ವಚನಗಳು.</h2>
             <!-- Poem Grid will be populated here dynamically -->
             <section class="poem-grid" id="poemGrid"></section>
             <button class="copy-btn" onclick="copyPoem(this)">&#xf0c5;</button>
@@ -45,10 +45,10 @@
         <!-- Footer -->
         <footer class="footer">
             <ul>
-                <li><button onclick="location.href='#link1'">ಸೃಜನೆ</button></li>
-                <li><button onclick="location.href='#link2'">ಗೌಪ್ಯತೆ ನೀತಿ</button></li>
-                <li><button onclick="location.href='#link3'">ಹಕ್ಕುತ್ಯಾಗ</button></li>
-                <li><button onclick="location.href='#link4'">&copy;ಕಾಪಿರೈಟ್</button></li>
+                <li><a href="About-Us.html">ಸೃಜನೆ</a></li>
+                <li><a href="Privacy-Policy.html">ಗೌಪ್ಯತೆ ನೀತಿ</a></li>
+                <li><a href="Disclaimer.html">ಹಕ್ಕುತ್ಯಾಗ</a></li>
+                <li><a href="License.html">ಪರವಾನಿಗೆ</a></li>
             </ul>
         </footer>
 
@@ -88,8 +88,8 @@
             // Use the Clipboard API if available
             navigator.clipboard.writeText(poemContent).then(() => {
                 // Indicate success
-                button.textContent = "✅";
-                setTimeout(() => (button.textContent = "fa fa-copy"), 2000);
+                button.textContent = "👍🏼";
+                setTimeout(() => (button.textContent = "📋"), 2000);
             }).catch(err => {
                 console.error('Clipboard API failed: ', err);
                 alert('Failed to copy text. Please copy manually.');
@@ -104,7 +104,7 @@
             textarea.select();
             try {
                 document.execCommand('copy');
-                button.textContent = "✅";
+                button.textContent = "👍🏼";
                 setTimeout(() => (button.textContent = "📋"), 2000);
             } catch (err) {
                 console.error('Fallback copy failed: ', err);
