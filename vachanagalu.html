@@ -33,9 +33,11 @@
 
         <!-- Content Section -->
         <main class="content">
-            <p>Welcome to the space where the main text or information will be displayed.</p>
+            <p>ವಚನಕಾರ ನಿಜಶರಣ ಅಂಬಿಗರ ಚೌಡಯ್ಯರ ವಚನಗಳು.</p>
             <!-- Poem Grid will be populated here dynamically -->
             <section class="poem-grid" id="poemGrid"></section>
+            <button class="copy-btn" onclick="copyPoem(this)">&#xf0c5;</button>
+
         </main>
         
 
@@ -69,11 +71,49 @@
                             <div class="poem-scrollable">
                                 ${fullText}
                             </div>
+                             <button class="copy-btn" onclick="copyPoem(this)">
+                        📋
+                    </button>
                         `;
                         poemGrid.appendChild(tile);
                     });
                 })
                 .catch(error => console.error('Error loading poems:', error));
+
+                // Copy poem content to clipboard
+    function copyPoem(button) {
+        const poemContent = button.previousElementSibling.textContent.trim();
+
+        if (navigator.clipboard) {
+            // Use the Clipboard API if available
+            navigator.clipboard.writeText(poemContent).then(() => {
+                // Indicate success
+                button.textContent = "✅";
+                setTimeout(() => (button.textContent = "fa fa-copy"), 2000);
+            }).catch(err => {
+                console.error('Clipboard API failed: ', err);
+                alert('Failed to copy text. Please copy manually.');
+            });
+        } else {
+            // Fallback for unsupported browsers
+            const textarea = document.createElement('textarea');
+            textarea.value = poemContent;
+            textarea.style.position = 'absolute';
+            textarea.style.left = '-9999px';
+            document.body.appendChild(textarea);
+            textarea.select();
+            try {
+                document.execCommand('copy');
+                button.textContent = "✅";
+                setTimeout(() => (button.textContent = "📋"), 2000);
+            } catch (err) {
+                console.error('Fallback copy failed: ', err);
+                alert('Failed to copy text. Please copy manually.');
+            } finally {
+                document.body.removeChild(textarea);
+            }
+        }
+    }
         </script>
         
         

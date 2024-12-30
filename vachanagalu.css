@@ -4,12 +4,15 @@ body {
     font-family: "Anek Kannada", Arial, sans-serif;
     background-color: #eaeaea;
     color: #333;
+    text-align: center;
+
 }
 
 .container {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 /* Header */
@@ -35,6 +38,7 @@ header .tagline {
     background-color: #9f9f9f;
     padding: 10px 0;
     border-radius: 25px;
+    font-size: medium;
 
 }
 
@@ -42,13 +46,15 @@ button {
     border-radius: 12px;
     padding: 10px 20px;
     border: none;
-    background-color: #007BFF;
-    color: white;
+    background-color: #e6e6e6;
+    color: rgb(43, 43, 43);
     cursor: pointer;
+    font-family: "Anek Kannada", Arial, sans-serif;
+    margin: 10px;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #ebebeb;
 }
 
 .menu-bar ul {
@@ -78,49 +84,16 @@ button:hover {
 }
 
 /* Content Section */
+
 .content {
     background-color: #ffffff;
-    padding: 20px;
-    border-radius: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;    border-radius: 25px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Footer */
-.footer {
-    background-color: #9f9f9f;
-    padding: 10px 0;
-    margin-top: 20px;
-    text-align: center;
-    border-radius: 25px;
-
-}
-
-button {
-    border-radius: 12px;
-    padding: 10px 20px;
-    border: none;
-    background-color: #007BFF;
-    color: white;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
 
 
-.poem-tile {
-    margin-bottom: 20px;
-    padding: 15px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.poem-tile h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
 
        /* Style the container with the scrollable content */
 .poem-scrollable {
@@ -159,54 +132,30 @@ button:hover {
 
 
 
-
-.copy-btn {
-    display: inline-block;
-    padding: 5px 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
 .copy-btn:hover {
-    background-color: #45a049;
+    background-color: #ffffff;
 }
 
 
 .copy-btn {
     display: inline-block;
     padding: 5px 10px;
-    background-color: #4CAF50;
+    background-color: #ffffff;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: auto; /* Ensures button stays at the bottom */
+    align-self: flex-end; /* Aligns button to the right */
+    margin: 0px;
+
+
 }
 
 .copy-btn:hover {
-    background-color: #45a049;
+    background-color: #e4e4e4;
 }
 
-
-
-
-.read-more-btn {
-    background-color: #28a745;
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    font-size: 0.9rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    margin-right: 10px;
-}
-
-.read-more-btn:hover {
-    background-color: #218838;
-}
 
 
 
@@ -223,13 +172,28 @@ button:hover {
 }
 
 .poem-tile {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Stacks elements vertically */
+    justify-content: space-between; /* Ensures space between content and button */
+    height: 300px; /* Consistent height for all tiles */
+    position: relative; /* Allows precise positioning if needed */
+}
+/*
+.poem-tile {
     background-color: #ffffff;
     border-radius: 25px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 15px;
     text-align: center;
     position: relative;
-}
+    
+}*/
 
 .poem-tile h2 {
     font-size: 1.2rem;
@@ -244,6 +208,15 @@ button:hover {
 }
 
 
+/* Footer */
+.footer {
+    background-color: #9f9f9f;
+    padding: 10px 0;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 25px;
+
+}
 
 .footer ul {
     list-style: none;
