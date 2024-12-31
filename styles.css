@@ -4,7 +4,6 @@ body {
     font-family: "Anek Kannada", Arial, sans-serif;
     background-color: #eaeaea;
     color: #333;
-    text-align: center;
 
 }
 
@@ -37,10 +36,6 @@ body {
     color: #ffffff; /* Change color on hover */
 }
 
-header h2 {
-    margin: 0;
-}
-
 header {
     text-align: center;
     margin-bottom: 20px;
@@ -52,6 +47,20 @@ header h1 {
     font-size: 2.5em;
     color: #333;
 }
+
+header h2 {
+    margin: 0;
+}
+
+.content h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #666;
+    text-align: center;
+    font-weight: 400;
+}
+
+
 
 header .tagline {
     font-size: 1.2em;
@@ -119,18 +128,135 @@ button:hover {
     border: 0;
     height: 1px;
     background: #ccc;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 /* Content Section */
 
+/* Main Intro Section */
+.main-intro {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: top;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Holder */
+.image-holder {
+    flex: 1 1 100%; /* Default to full width on small screens */
+    text-align: top;
+    margin-bottom: 20px; /* Adds spacing below the image on small screens */
+    max-width: 350px;
+    height: 350px;
+    align-items: start;
+}
+
+.image-holder img {
+    max-width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Text Content */
+.text-content {
+    flex: 1 1 100%; /* Default to full width on small screens */
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    text-align: top; /* Center-align text on small screens */
+}
+
+.text-content h1 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.text-content p {
+    text-align: start;
+    font-size: 1.1em;
+    color: #666;
+    line-height: 1.6;
+    margin-top: 0;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    .main-intro {
+        flex-wrap: nowrap; /* Side-by-side layout for larger screens */
+    }
+
+    .image-holder {
+        flex: 1;
+        margin-bottom: 0; /* Remove spacing below the image */
+        text-align: left; /* Align image to the left */
+    }
+
+    .text-content {
+        flex: 2;
+        text-align: left; /* Align text to the left */
+    }
+}
+
+/*end*/
+
+/*table*/
+#biography-table {
+    width: 100%;
+    margin: 20px auto;
+    max-width: 600px;
+    font-family: "Anek Kannada", sans-serif; /* Replace with your preferred font */
+    font-size: 1.1em;
+    color: #333;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+
+}
+
+#biography-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#biography-table td {
+    padding: 8px 10px;
+    vertical-align: top;
+    border: none; /* Removes visible borders */
+}
+
+#biography-table td:first-child {
+    font-weight: bold;
+    text-align: left;
+    width: 40%; /* Adjust as needed */
+}
+
+#biography-table td:last-child {
+    text-align: left;
+    width: 60%; /* Adjust as needed */
+}
+
+/*end*/
+
+
 .content {
     background-color: #ffffff;
-    padding-top: 20px;
-    padding-bottom: 20px;    border-radius: 25px;
+    /*padding-top: 20px;
+    padding-bottom: 20px;   */ 
+    border-radius: 25px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.content h2 {
+    text-align: center;
+
+}
 
 
 
@@ -375,3 +501,112 @@ button:hover {
     display: inline;
     margin: 5px;
 }
+
+
+/*Galery css*/
+
+/* General Reset */
+body {
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* Gallery Container */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+/* Media Item */
+.media-item {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Images and Videos */
+.media-item img, .media-item video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 1px solid #ddd;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Download Button */
+.download-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #4e4e4e;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #767a76;
+}
+
+/* about css */
+.about-section, .contact-section {
+    margin-bottom: 20px;
+}
+
+.about-section h1,
+.contact-section h2 {
+    color: #272727;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.about-section p,
+.contact-section p {
+    margin: 8px 0;
+}
+
+.about-section a,
+.contact-section a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.about-section a:hover,
+.contact-section a:hover {
+    text-decoration: underline;
+}
+
+/* Contact section styling */
+.contact-section a {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.contact-section p {
+    margin: 5px 0;
+}
+
+
+#aboutUs {
+    margin: 10px; /* Default margin for mobile (no margin) */
+}
+
+@media screen and (min-width: 768px) {
+    #aboutUs {
+        margin: 0 20%; /* Apply 20% margin on left and right for desktop screens */
+    }
+}
+
+
+/*about css end*/
+

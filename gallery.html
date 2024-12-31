@@ -8,6 +8,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Anek+Kannada:wght@100..800&family=Noto+Serif+Kannada:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/favicon.png" type="image/png">
+
 </head>
 <body>
     <div class="container">
@@ -33,8 +35,61 @@
 
         <!-- Content Section -->
         <main class="content">
-            <p>ಚಿತ್ರ ಸಂಪುಟ</p>
+            <h2>ಚಿತ್ರ ಸಂಪುಟ</h2>
+            <h3 class="credit-line">
+                ಈ ಗ್ಯಾಲರಿಯಲ್ಲಿರುವ ಚಿತ್ರಗಳನ್ನು <strong>ಅರುಣ್ ಸಿ ಕಲ್ಲಪ್ಪನವರ್</strong> ರಚಿಸಿದ್ದಾರೆ. ನೀವು ಅವುಗಳನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಬಹುದು ಮತ್ತು ಬಳಸಬಹುದು, ಆದರೆ ದಯವಿಟ್ಟು <a href="https://www.arunck.com/" target="_blank">arunck.com</a> ನಲ್ಲಿ ಕ್ರೆಡಿಟ್ ನೀಡಿ..
+            </h3>
+                </main>
+        <main class="gallery-container">
+                <!-- Example GIF 
+                <div class="media-item">
+                    <img src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="Example GIF">
+                    <button class="download-btn" onclick="downloadContent('gif-url.gif')">📥</button>
+                </div>  -->
+
+                <!-- Example Loop Video -->
+                
+                <div class="media-item">
+                    <video loop autoplay muted>
+                        <source src="https://firebasestorage.googleapis.com/v0/b/all-projects-5bb9d.appspot.com/o/imarunck%2Fnijasharana.com%2F001%201080vid.mp4?alt=media&token=459f0437-abf6-46be-a558-e4ef165df6d6" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <button class="download-btn" onclick="downloadContent('https://firebasestorage.googleapis.com/v0/b/all-projects-5bb9d.appspot.com/o/imarunck%2Fnijasharana.com%2F001%201080vid.mp4?alt=media&token=459f0437-abf6-46be-a558-e4ef165df6d6')">📥</button>
+                </div>
+                                
+                <!-- Example Image -->
+                
+                <div class="media-item">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/all-projects-5bb9d.appspot.com/o/imarunck%2Fnijasharana.com%2F003%20Post%20A4.png?alt=media&token=715ba989-f046-437a-a816-6a1add80d539" alt="Example Image">
+                    <button class="download-btn" onclick="downloadContent('https://firebasestorage.googleapis.com/v0/b/all-projects-5bb9d.appspot.com/o/imarunck%2Fnijasharana.com%2F003%20Post%20A4.png?alt=media&token=715ba989-f046-437a-a816-6a1add80d539')">📥</button>
+                </div>
+                <div class="media-item">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/all-projects-5bb9d.appspot.com/o/imarunck%2Fnijasharana.com%2F004%20Artboard%201.png?alt=media&token=a909ee20-ca87-42b0-a9f5-e1bc63fe9d9b" alt="Example Image">
+                    <button class="download-btn" onclick="downloadContent('https://firebasestorage.googleapis.com/v0/b/all-projects-5bb9d.appspot.com/o/imarunck%2Fnijasharana.com%2F004%20Artboard%201.png?alt=media&token=a909ee20-ca87-42b0-a9f5-e1bc63fe9d9b')">📥</button>
+                </div>
+                <div class="media-item">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/all-projects-5bb9d.appspot.com/o/imarunck%2Fnijasharana.com%2F005%20Artboard%202.png?alt=media&token=48c50f53-9ea1-445d-9381-2f965c9b99c1" alt="Example Image">
+                    <button class="download-btn" onclick="downloadContent('https://firebasestorage.googleapis.com/v0/b/all-projects-5bb9d.appspot.com/o/imarunck%2Fnijasharana.com%2F005%20Artboard%202.png?alt=media&token=48c50f53-9ea1-445d-9381-2f965c9b99c1')">📥</button>
+                </div>
+                <div class="media-item">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/all-projects-5bb9d.appspot.com/o/imarunck%2Fnijasharana.com%2F005%20GADDUGE.png?alt=media&token=f986ab82-753d-4975-83b7-14fab1685a6c" alt="Example Image">
+                    <button class="download-btn" onclick="downloadContent('https://firebasestorage.googleapis.com/v0/b/all-projects-5bb9d.appspot.com/o/imarunck%2Fnijasharana.com%2F005%20GADDUGE.png?alt=media&token=f986ab82-753d-4975-83b7-14fab1685a6c')">📥</button>
+                </div>
+                <div class="media-item">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/all-projects-5bb9d.appspot.com/o/imarunck%2Fnijasharana.com%2F07%20TEMP.jpg?alt=media&token=ad58b836-9330-4863-b64e-b6ad7d574dea" alt="Example Image">
+                    <button class="download-btn" onclick="downloadContent('https://firebasestorage.googleapis.com/v0/b/all-projects-5bb9d.appspot.com/o/imarunck%2Fnijasharana.com%2F07%20TEMP.jpg?alt=media&token=ad58b836-9330-4863-b64e-b6ad7d574dea')">📥</button>
+                </div>
         </main>
+
+        <script>
+            // JavaScript function to handle download from Firebase
+            function downloadContent(url) {
+                const anchor = document.createElement('a');
+                anchor.href = url; // Replace with actual Firebase URL
+                anchor.download = ''; // Let the browser infer the filename
+                anchor.click();
+            }
+        </script>
 
         <!-- Footer -->
         <footer class="footer">
