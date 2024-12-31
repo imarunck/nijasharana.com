@@ -1,19 +1,32 @@
 /* General Styles */
 body {
     margin: 0;
-    font-family: "Anek Kannada", Arial, sans-serif;
+    font-family: "Baloo Tamma 2", Arial, sans-serif;
     background-color: #eaeaea;
-    color: #333;
+    font-weight: 500;
+    border-radius: 25px;
+
 
 }
 
 /* Container main Importent */
-.container {
-    width: 100%;
-    margin: 0 auto;
+#container {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
+#container {
+    margin: 0px; /* Default margin for mobile (no margin) */
+    background-color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+    #container {
+        margin-left:10%;
+        margin-right:10%; /* Apply 20% margin on left and right for desktop screens */
+    }
+}
+
 
 /* Header */
 
@@ -24,7 +37,7 @@ body {
 }
 
 #logo-link a h1 {
-    font-family: 'Noto Serif Kannada', sans-serif; /* Or any font you prefer */
+    font-family: "Anek Kannada", sans-serif; /* Or any font you prefer */
     font-size: 32px;
     color: #333; /* Logo text color */
     margin: 0;
@@ -43,7 +56,7 @@ header {
 
 header h1 {
     margin: 0;
-    font-family: "Noto Serif Kannada", serif;
+    font-family: "Anek Kannada", serif;
     font-size: 2.5em;
     color: #333;
 }
@@ -57,7 +70,8 @@ header h2 {
     font-size: 1.2em;
     color: #666;
     text-align: center;
-    font-weight: 400;
+    font-weight: 500;
+
 }
 
 
@@ -73,6 +87,7 @@ header .tagline {
     padding: 5px 0;
     border-radius: 25px;
     font-size: medium;
+    font-family: "Anek Kannada", sans-serif;
 
 }
 
@@ -101,7 +116,7 @@ button {
     background-color: #e6e6e6;
     color: rgb(43, 43, 43);
     cursor: pointer;
-    font-family: "Anek Kannada", Arial, sans-serif;
+    font-family: "Baloo Tamma 2", Arial, sans-serif;
     margin: 10px;
 }
 
@@ -185,6 +200,8 @@ button:hover {
     color: #666;
     line-height: 1.6;
     margin-top: 0;
+    font-weight: 500;
+
 }
 
 /* Responsive Styles */
@@ -212,10 +229,10 @@ button:hover {
     width: 100%;
     margin: 20px auto;
     max-width: 600px;
-    font-family: "Anek Kannada", sans-serif; /* Replace with your preferred font */
+    font-family: "Baloo Tamma 2", sans-serif; /* Replace with your preferred font */
     font-size: 1.1em;
     color: #333;
-    background-color: #e0e0e0;
+    background-color: #f5f5f5;
     border-radius: 10px;
 
 }
@@ -367,6 +384,8 @@ button:hover {
     font-size: 1rem;
     color: #666;
     margin-bottom: 15px;
+    font-weight: 500;
+
 }
 
 
@@ -376,7 +395,7 @@ button:hover {
     margin: 20px 0;
     border-radius: 10px;
     border: 1px solid #ddd;
-    font-family: "Anek Kannada", sans-serif;
+    font-family: "Baloo Tamma 2", sans-serif;
 }
 
 #disclaimer h2 {
@@ -389,6 +408,8 @@ button:hover {
     font-size: 24px;
     color: #555;
     line-height: 1.6;
+    font-weight: 500;
+
 }
 
 #disclaimer p:first-of-type {
@@ -445,6 +466,8 @@ button:hover {
     border-radius: 5px;
     margin-top: 5px;
     margin-bottom: 5px;
+    font-family: "Anek Kannada", sans-serif;
+
     
 }
 
@@ -461,7 +484,7 @@ button {
     background-color: #e6e6e6;
     color: rgb(43, 43, 43);
     cursor: pointer;
-    font-family: "Anek Kannada", Arial, sans-serif;
+    font-family: "Baloo Tamma 2", Arial, sans-serif;
     margin: 10px;
 }
 
@@ -511,12 +534,31 @@ body {
     background-color: #f4f4f4;
 }
 
+
+
 /* Gallery Container */
 .gallery-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 15px;
     padding: 20px;
+
+}
+
+
+
+#Gallery-content h2 {
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#Gallery-content p{
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 /* Media Item */
@@ -572,6 +614,8 @@ body {
 .about-section p,
 .contact-section p {
     margin: 8px 0;
+    font-weight: 500;
+
 }
 
 .about-section a,
@@ -594,6 +638,8 @@ body {
 
 .contact-section p {
     margin: 5px 0;
+    font-weight: 500;
+
 }
 
 
@@ -607,6 +653,36 @@ body {
     }
 }
 
-
 /*about css end*/
 
+/*details css*/
+
+
+#detail h2 {
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#detail h3 {
+    color: #666666;
+}
+
+#detail p {
+    color: #666666;
+    font-weight: 500;
+
+}
+
+
+
+#detail {
+    margin: 10px; /* Default margin for mobile (no margin) */
+}
+
+@media screen and (min-width: 768px) {
+    #detail {
+        margin-left:10%;
+        margin-right:10%; /* Apply 20% margin on left and right for desktop screens */
+    }
+}
