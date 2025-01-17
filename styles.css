@@ -455,8 +455,8 @@ button:hover {
 .footer a {
     display: inline-block;
     padding: 5px 10px;
-    background-color: #969696;
-    color: #111111;
+    background-color: #616161;
+    color: #dadada;
     text-decoration: none;
     border-radius: 5px;
     margin-top: 5px;
@@ -467,8 +467,8 @@ button:hover {
 }
 
 .footer a:hover {
-    background-color: #111111;
-    color: #969696;
+    background-color: #dadada;
+    color: #616161;
 }
 
 
@@ -477,7 +477,7 @@ button {
     padding: 10px 20px;
     border: none;
     background-color: #e6e6e6;
-    color: rgb(43, 43, 43);
+    color: #eee;
     cursor: pointer;
     font-family: "Baloo Tamma 2", Arial, sans-serif;
     margin: 10px;
