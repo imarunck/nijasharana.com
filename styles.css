@@ -32,6 +32,35 @@ body {
 /* Header */
 
 header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#logo-link {
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+#logo {
+    max-width: 400px; /* Default size for larger screens */
+    height: auto;
+    display: block;
+    align-content: center;
+}
+
+/* Adjust size for mobile screens */
+@media (max-width: 768px) {
+    #logo {
+        max-width: 300px; /* Smaller size for mobile */
+    }
+}
+
+
+header {
     background-color: #EEEEEE;
 }
 
@@ -79,6 +108,9 @@ header .tagline {
     color: #666;
 }
 
+
+
+
 /* Menu Bar */
 .menu-bar {
     background-color: #EEEEEE;
@@ -92,7 +124,7 @@ header .tagline {
 .menu-bar a {
     display: inline-block;
     padding: 5px 10px;
-    background-color: #172121;
+    background-color: #3573e7;
     color: #FFF;
     text-decoration: none;
     border-radius: 5px;
@@ -104,7 +136,7 @@ header .tagline {
 
 .menu-bar a:hover {
     background-color: #FFF;
-    color: #172121;
+    color: #3573e7;
 }
 
 
@@ -540,7 +572,7 @@ button:hover {
 
 
 #Gallery-content h2 {
-    color: #333;
+    color: #0a0a0a;
     margin-bottom: 10px;
     text-align: center;
 }
