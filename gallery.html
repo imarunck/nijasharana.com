@@ -29,6 +29,13 @@
                 <li><a href="gallery.html">ಚಿತ್ರ ಸಂಪುಟ</a></li>           
            
             </ul>
+                    <!-- Font Awesome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+        <a href="https://wa.me/?text=ಅಂಬಿಗರ%20ಚೌಡಯ್ಯನವರ%20ಬಗ್ಗೆ%20ವೆಬ್ಸೈಟ್%20https://nijasharana.com" 
+        id="sharess" target="_blank">
+            <i class="fab fa-whatsapp-square"></i> ಹಂಚಿ
+        </a>
         </nav>
 
         <!-- Divider Line 
@@ -57,7 +64,10 @@
                 </div>
                                 
                 <!-- Example Image -->
-                
+                <div class="media-item">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/all-projects-5bb9d.appspot.com/o/imarunck%2Fnijasharana.com%2F11%20background.png?alt=media&token=30406830-ff59-412b-87f0-dd389e25bebf" alt="Example Image">
+                    <button class="download-btn" onclick="downloadContent('https://firebasestorage.googleapis.com/v0/b/all-projects-5bb9d.appspot.com/o/imarunck%2Fnijasharana.com%2F11%20background.png?alt=media&token=30406830-ff59-412b-87f0-dd389e25bebf')">📥</button>
+                </div>
                 <div class="media-item">
                     <img src="https://firebasestorage.googleapis.com/v0/b/all-projects-5bb9d.appspot.com/o/imarunck%2Fnijasharana.com%2F003%20Post%20A4.png?alt=media&token=715ba989-f046-437a-a816-6a1add80d539" alt="Example Image">
                     <button class="download-btn" onclick="downloadContent('https://firebasestorage.googleapis.com/v0/b/all-projects-5bb9d.appspot.com/o/imarunck%2Fnijasharana.com%2F003%20Post%20A4.png?alt=media&token=715ba989-f046-437a-a816-6a1add80d539')">📥</button>
@@ -66,6 +76,9 @@
                     <img src="https://firebasestorage.googleapis.com/v0/b/all-projects-5bb9d.appspot.com/o/imarunck%2Fnijasharana.com%2F004%20Artboard%201.png?alt=media&token=a909ee20-ca87-42b0-a9f5-e1bc63fe9d9b" alt="Example Image">
                     <button class="download-btn" onclick="downloadContent('https://firebasestorage.googleapis.com/v0/b/all-projects-5bb9d.appspot.com/o/imarunck%2Fnijasharana.com%2F004%20Artboard%201.png?alt=media&token=a909ee20-ca87-42b0-a9f5-e1bc63fe9d9b')">📥</button>
                 </div>
+
+
+
                 <div class="media-item">
                     <img src="https://firebasestorage.googleapis.com/v0/b/all-projects-5bb9d.appspot.com/o/imarunck%2Fnijasharana.com%2F005%20Artboard%202.png?alt=media&token=48c50f53-9ea1-445d-9381-2f965c9b99c1" alt="Example Image">
                     <button class="download-btn" onclick="downloadContent('https://firebasestorage.googleapis.com/v0/b/all-projects-5bb9d.appspot.com/o/imarunck%2Fnijasharana.com%2F005%20Artboard%202.png?alt=media&token=48c50f53-9ea1-445d-9381-2f965c9b99c1')">📥</button>
@@ -74,10 +87,7 @@
                     <img src="https://firebasestorage.googleapis.com/v0/b/all-projects-5bb9d.appspot.com/o/imarunck%2Fnijasharana.com%2F005%20GADDUGE.png?alt=media&token=f986ab82-753d-4975-83b7-14fab1685a6c" alt="Example Image">
                     <button class="download-btn" onclick="downloadContent('https://firebasestorage.googleapis.com/v0/b/all-projects-5bb9d.appspot.com/o/imarunck%2Fnijasharana.com%2F005%20GADDUGE.png?alt=media&token=f986ab82-753d-4975-83b7-14fab1685a6c')">📥</button>
                 </div>
-                <div class="media-item">
-                    <img src="https://firebasestorage.googleapis.com/v0/b/all-projects-5bb9d.appspot.com/o/imarunck%2Fnijasharana.com%2F11%20background.png?alt=media&token=30406830-ff59-412b-87f0-dd389e25bebf" alt="Example Image">
-                    <button class="download-btn" onclick="downloadContent('https://firebasestorage.googleapis.com/v0/b/all-projects-5bb9d.appspot.com/o/imarunck%2Fnijasharana.com%2F11%20background.png?alt=media&token=30406830-ff59-412b-87f0-dd389e25bebf')">📥</button>
-                </div>
+
                 <div class="media-item">
                     <img src="https://firebasestorage.googleapis.com/v0/b/all-projects-5bb9d.appspot.com/o/imarunck%2Fnijasharana.com%2F07%20TEMP.jpg?alt=media&token=ad58b836-9330-4863-b64e-b6ad7d574dea" alt="Example Image">
                     <button class="download-btn" onclick="downloadContent('https://firebasestorage.googleapis.com/v0/b/all-projects-5bb9d.appspot.com/o/imarunck%2Fnijasharana.com%2F07%20TEMP.jpg?alt=media&token=ad58b836-9330-4863-b64e-b6ad7d574dea')">📥</button>
@@ -112,6 +122,20 @@
                 <li><a href="License.html">ಪರವಾನಿಗೆ</a></li>
             </ul>
         </footer>
+
+        <script>
+            window.addEventListener("scroll", function() {
+                var shareBtn = document.getElementById("sharess");
+                if (window.innerWidth <= 768) {
+                    if (window.scrollY > 100) {
+                        shareBtn.style.display = "none";
+                    } else {
+                        shareBtn.style.display = "block";
+                    }
+                }
+            });
+        </script>
+        
         
         
     </div>

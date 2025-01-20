@@ -40,3 +40,6 @@ mediaFiles.forEach(media => {
 function downloadContent(url) {
   window.open(url, '_blank');
 }
+
+
+

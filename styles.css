@@ -426,13 +426,13 @@ button:hover {
 }
 
 #disclaimer h2 {
-    font-size: 28px;
+    font-size: 24px;
     color: #333;
     margin-bottom: 10px;
 }
 
 #disclaimer p {
-    font-size: 24px;
+    font-size: 18px;
     color: #555;
     line-height: 1.6;
     font-weight: 500;
@@ -444,17 +444,22 @@ button:hover {
 }
 
 #disclaimer {
-    font-size: 14px;
-    color: #4d4d4d;
-    text-align: center;
+    margin: 10px; /* Default margin for mobile (no margin) */
+    background-color: #fff;
+    border-radius: 10px
+
+}
+
+@media screen and (min-width: 768px) {
+    #disclaimer {
+        margin: 0 20%; /* Apply 20% margin on left and right for desktop screens */
+        padding: 5%;
+    }
 }
 
 #license-content {
     font-size: 18px;
-    color: #4d4d4d;
     text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
     text-decoration: none; /* Remove default underline from link */
 }
 
@@ -462,14 +467,33 @@ button:hover {
     color: #4d4d4d;
     text-decoration: none;
 }
+#license-content {
+    margin: 10px; /* Default margin for mobile (no margin) */
+    background-color: #fff;
+    border-radius: 10px
+
+}
+
+@media screen and (min-width: 768px) {
+    #license-content {
+        margin: 0 20%; /* Apply 20% margin on left and right for desktop screens */
+        padding: 5%;
+    }
+}
+
 
 #privacy-policy-content {
-    font-size: 18px;
-    color: #4d4d4d;
-    text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin: 10px; /* Default margin for mobile (no margin) */
+    background-color: #fff;
+    border-radius: 10px
 
+}
+
+@media screen and (min-width: 768px) {
+    #privacy-policy-content {
+        margin: 0 20%; /* Apply 20% margin on left and right for desktop screens */
+        padding: 5%;
+    }
 }
 
 
@@ -682,11 +706,15 @@ button:hover {
 
 #aboutUs {
     margin: 10px; /* Default margin for mobile (no margin) */
+    background-color: #fff;
+    border-radius: 10px
+
 }
 
 @media screen and (min-width: 768px) {
     #aboutUs {
         margin: 0 20%; /* Apply 20% margin on left and right for desktop screens */
+        padding: 5%;
     }
 }
 
@@ -716,11 +744,63 @@ button:hover {
 #detail {
     margin: 10px; /* Default margin for mobile (no margin) */
     background-color: #fcfcfc;
+    border-radius: 10px;
 }
 
 @media screen and (min-width: 768px) {
     #detail {
-        margin-left:10%;
-        margin-right:10%; /* Apply 20% margin on left and right for desktop screens */
+        margin-left:20%;
+        margin-right:20%; /* Apply 20% margin on left and right for desktop screens */
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 }
+
+
+.author-photo {
+    width: 50px; /* Adjust size as needed */
+    height: 50px;
+    border-radius: 50%; /* Makes the image round */
+    object-fit: cover; /* Ensures the image fits within the round shape */
+    border: 2px solid #ccc; /* Optional border */
+    transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+}
+
+.author-photo:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+
+#sharess {
+    position: fixed;
+    right: 0;
+    top: 25%;
+    transform: translateY(-50%);
+    background-color: #D9FDD3; /* Green color */
+    color: rgb(92, 92, 92);
+    padding: 5px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+    z-index: 999;
+}
+
+#sharess:hover {
+    background-color: #D9FDD3;
+    padding-left: 25px; /* Slight animation effect on hover */
+}
+
+/* Hide on smaller screens when scrolling */
+@media (max-width: 768px) {
+    #sharess {
+        display: none;
+        opacity: 70%;
+    }
+}
+

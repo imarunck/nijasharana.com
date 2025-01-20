@@ -29,6 +29,15 @@
                 <li><a href="vachanagalu.html">ವಚನಗಳು</a></li>
                 <li><a href="gallery.html">ಚಿತ್ರ ಸಂಪುಟ</a></li>           
             </ul>
+
+                    <!-- Font Awesome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+        <a href="https://wa.me/?text=ಅಂಬಿಗರ%20ಚೌಡಯ್ಯನವರ%20ಬಗ್ಗೆ%20ವೆಬ್ಸೈಟ್%20https://nijasharana.com" 
+        id="sharess" target="_blank">
+            <i class="fab fa-whatsapp-square"></i> ಹಂಚಿ
+        </a>
+
         </nav>
 
         <!-- Divider Line 
@@ -121,6 +130,20 @@
             }
         }
     }
+        </script>
+        
+
+        <script>
+            window.addEventListener("scroll", function() {
+                var shareBtn = document.getElementById("sharess");
+                if (window.innerWidth <= 768) {
+                    if (window.scrollY > 100) {
+                        shareBtn.style.display = "none";
+                    } else {
+                        shareBtn.style.display = "block";
+                    }
+                }
+            });
         </script>
         
         
