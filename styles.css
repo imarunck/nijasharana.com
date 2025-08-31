@@ -1,0 +1,937 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: "Baloo Tamma 2", Arial, sans-serif;
+    background-color: #CAF0F8;
+    font-weight: 500;
+    border-radius: 25px;
+
+
+
+}
+
+/* Container main Importent */
+
+
+#container {
+    margin: 0px; /* Default margin for mobile (no margin) */
+    background-color: #EEEEEE;
+
+
+
+}
+
+@media screen and (min-width: 768px) {
+    #container {
+        margin-left:10%;
+        margin-right:10%; /* Apply 20% margin on left and right for desktop screens */
+    }
+}
+
+
+/* Header */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#logo-link {
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+#logo {
+    max-width: 400px; /* Default size for larger screens */
+    height: auto;
+    display: block;
+    align-content: center;
+}
+
+/* Adjust size for mobile screens */
+@media (max-width: 768px) {
+    #logo {
+        max-width: 300px; /* Smaller size for mobile */
+    }
+}
+
+
+header {
+    background-color: #EEEEEE;
+}
+
+#logo-link {
+    text-decoration: none; /* Remove default underline from link */
+    display: block;
+    color: #EEEEEE; /* Inherit color from parent (h1) */
+}
+
+header h1:hover{
+    color: #FCB040;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-family: "Anek Kannada", serif;
+    font-size: 2.5em;
+    color: #F29D35; /* Logo text color */
+    padding-top: 20px;
+
+}
+
+header h2 {
+    margin: 0;
+}
+
+.content h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #666;
+    text-align: center;
+    font-weight: 500;
+
+}
+
+
+
+header .tagline {
+    font-size: 1.2em;
+    color: #666;
+}
+
+
+
+
+/* Menu Bar */
+.menu-bar {
+    background-color: #EEEEEE;
+    padding: 5px 0;
+    border-radius: 25px;
+    font-size: medium;
+    font-family: "Anek Kannada", sans-serif;
+
+}
+
+.menu-bar a {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #3573e7;
+    color: #FFF;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    
+}
+
+.menu-bar a:hover {
+    background-color: #FFF;
+    color: #3573e7;
+}
+
+
+button {
+    border-radius: 12px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-family: "Baloo Tamma 2", Arial, sans-serif;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #ebebeb;
+}
+
+.menu-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.menu-bar li {
+    display: inline;
+    margin: 5px;
+}
+
+
+
+/* Divider Line */
+.divider {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 10px 0;
+}
+
+/* Content Section */
+
+/* Main Intro Section */
+.main-intro {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: top;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fcfcfc;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.018);
+}
+
+/* Image Holder */
+.image-holder {
+    flex: 1 1 100%; /* Default to full width on small screens */
+    text-align: top;
+    margin-bottom: 20px; /* Adds spacing below the image on small screens */
+    max-width: 350px;
+    height: 350px;
+    align-items: start;
+}
+
+.image-holder img {
+    max-width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.018);
+}
+
+/* Text Content */
+.text-content {
+    flex: 1 1 100%; /* Default to full width on small screens */
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    text-align: top; /* Center-align text on small screens */
+}
+
+.text-content h1 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.text-content p {
+    text-align: start;
+    font-size: 1.1em;
+    color: #666;
+    line-height: 1.6;
+    margin-top: 0;
+    font-weight: 500;
+
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    .main-intro {
+        flex-wrap: nowrap; /* Side-by-side layout for larger screens */
+    }
+
+    .image-holder {
+        flex: 1;
+        margin-bottom: 0; /* Remove spacing below the image */
+        text-align: left; /* Align image to the left */
+    }
+
+    .text-content {
+        flex: 2;
+        text-align: left; /* Align text to the left */
+    }
+}
+
+/*end*/
+
+/*table*/
+#biography-table {
+    width: 100%;
+    margin: 20px auto;
+    max-width: 600px;
+    font-family: "Baloo Tamma 2", sans-serif; /* Replace with your preferred font */
+    font-size: 1.1em;
+    color: #333;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+
+}
+
+#biography-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#biography-table td {
+    padding: 8px 10px;
+    vertical-align: top;
+    border: none; /* Removes visible borders */
+}
+
+#biography-table td:first-child {
+    font-weight: bold;
+    text-align: left;
+    width: 40%; /* Adjust as needed */
+}
+
+#biography-table td:last-child {
+    text-align: left;
+    width: 60%; /* Adjust as needed */
+}
+
+/*end*/
+
+
+.content {
+    background-color: #EEEEEE;
+    /*padding-top: 20px;
+    padding-bottom: 20px;    
+    border-radius: 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);*/
+}
+
+.content h2 {
+    text-align: center;
+
+}
+
+
+
+       /* Style the container with the scrollable content */
+.poem-scrollable {
+    max-height: 300px;  /* Adjust height as needed */
+    overflow-y: auto;   /* Enables scrolling */
+    font-size: 1.1em;
+    color: #555;
+    padding-top: 10px;
+    
+    /* Make sure this container can show a scrollbar */
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #888 #eaeaea; /* Firefox */
+}
+
+/* Chrome, Safari, and Edge */
+.poem-scrollable::-webkit-scrollbar {
+    width: 8px;  /* Width of the scrollbar */
+}
+
+.poem-scrollable::-webkit-scrollbar-thumb {
+    background-color: #888; /* Scrollbar thumb color */
+    border-radius: 10px;    /* Rounded edges */
+}
+
+.poem-scrollable::-webkit-scrollbar-track {
+    background-color: #eaeaea; /* Scroll track color */
+    border-radius: 10px;       /* Rounded edges for the track */
+}
+
+.poem-scrollable::-webkit-scrollbar-button {
+    display: none;  /* Hides the scrollbar arrows */
+}
+
+
+
+.copy-btn:hover {
+    background-color: #EEEEEE;
+}
+
+
+.copy-btn {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #EEEEEE;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: auto; /* Ensures button stays at the bottom */
+    align-self: flex-end; /* Aligns button to the right */
+    margin: 0px;
+
+
+}
+
+.copy-btn:hover {
+    background-color: #e4e4e4;
+}
+
+
+
+
+
+
+/* Poem Grid Styles */
+.poem-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.poem-tile {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Stacks elements vertically */
+    justify-content: space-between; /* Ensures space between content and button */
+    height: 300px; /* Consistent height for all tiles */
+    position: relative; /* Allows precise positioning if needed */
+}
+/*
+.poem-tile {
+    background-color: #EEEEEE;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    
+}*/
+
+.poem-tile h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.poem-tile p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+    font-weight: 500;
+
+}
+
+
+#disclaimer {
+    background-color: #eee;
+    padding: 20px;
+    margin: 20px 0;
+    font-family: "Baloo Tamma 2", sans-serif;
+}
+
+#disclaimer h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#disclaimer p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    font-weight: 500;
+
+}
+
+#disclaimer p:first-of-type {
+    font-weight: bold;
+}
+
+#disclaimer {
+    margin: 10px; /* Default margin for mobile (no margin) */
+    background-color: #fff;
+    border-radius: 10px
+
+}
+
+@media screen and (min-width: 768px) {
+    #disclaimer {
+        margin: 0 20%; /* Apply 20% margin on left and right for desktop screens */
+        padding: 5%;
+    }
+}
+
+#license-content {
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none; /* Remove default underline from link */
+}
+
+#license-content a {
+    color: #4d4d4d;
+    text-decoration: none;
+}
+#license-content {
+    margin: 10px; /* Default margin for mobile (no margin) */
+    background-color: #fff;
+    border-radius: 10px
+
+}
+
+@media screen and (min-width: 768px) {
+    #license-content {
+        margin: 0 20%; /* Apply 20% margin on left and right for desktop screens */
+        padding: 5%;
+    }
+}
+
+
+#privacy-policy-content {
+    margin: 10px; /* Default margin for mobile (no margin) */
+    background-color: #fff;
+    border-radius: 10px
+
+}
+
+@media screen and (min-width: 768px) {
+    #privacy-policy-content {
+        margin: 0 20%; /* Apply 20% margin on left and right for desktop screens */
+        padding: 5%;
+    }
+}
+
+
+
+/* Footer */
+
+.footer {
+    background-color: #9f9f9f;
+    padding: 10px 0;
+    border-radius: 25px;
+    font-size: medium;
+
+}
+
+.footer a {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #616161;
+    color: #dadada;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: "Anek Kannada", sans-serif;
+
+    
+}
+
+.footer a:hover {
+    background-color: #dadada;
+    color: #616161;
+}
+
+
+button {
+    border-radius: 12px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #e6e6e6;
+    color: #eee;
+    cursor: pointer;
+    font-family: "Baloo Tamma 2", Arial, sans-serif;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #ebebeb;
+}
+
+.footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.footer li {
+    display: inline;
+    margin: 5px;
+}
+
+.footer {
+    background-color: #EEEEEE;
+    padding: 10px 0;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 25px;
+
+}
+
+.footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.footer li {
+    display: inline;
+    margin: 5px;
+}
+
+
+/*Galery css*/
+
+/* General Reset */
+
+
+
+
+/* Gallery Container */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+    padding: 20px;
+
+}
+
+
+#Page-Head {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#Page-Head h2 {
+    color: #0a0a0a;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#Page-Head p{
+    background-color: #e9e9e9;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Media Item */
+.media-item {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Images and Videos */
+.media-item img, .media-item video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 1px solid #ddd;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Download Button */
+.download-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #ffffff00;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #eee;
+}
+
+
+.credit-line h3 {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/* about css */
+.about-section, .contact-section {
+    margin-bottom: 20px;
+}
+
+.about-section h1,
+.contact-section h2 {
+    color: #272727;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.about-section p,
+.contact-section p {
+    margin: 8px 0;
+    font-weight: 500;
+
+}
+
+.about-section a,
+.contact-section a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.about-section a:hover,
+.contact-section a:hover {
+    text-decoration: underline;
+}
+
+/* Contact section styling */
+.contact-section a {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.contact-section p {
+    margin: 5px 0;
+    font-weight: 500;
+
+}
+
+
+#aboutUs {
+    margin: 10px; /* Default margin for mobile (no margin) */
+    background-color: #fff;
+    border-radius: 10px
+
+}
+
+@media screen and (min-width: 768px) {
+    #aboutUs {
+        margin: 0 20%; /* Apply 20% margin on left and right for desktop screens */
+        padding: 5%;
+    }
+}
+
+/*about css end*/
+
+/*details css*/
+
+
+#detail h2 {
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#detail h3 {
+    color: #666666;
+}
+
+#detail p {
+    color: #666666;
+    font-weight: 500;
+
+}
+
+
+
+#detail {
+    margin: 10px; /* Default margin for mobile (no margin) */
+    background-color: #fcfcfc;
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    #detail {
+        margin-left:20%;
+        margin-right:20%; /* Apply 20% margin on left and right for desktop screens */
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+
+.author-photo {
+    width: 50px; /* Adjust size as needed */
+    height: 50px;
+    border-radius: 50%; /* Makes the image round */
+    object-fit: cover; /* Ensures the image fits within the round shape */
+    border: 2px solid #ccc; /* Optional border */
+    transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+}
+
+.author-photo:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+
+#sharess {
+    position: fixed;
+    right: 0;
+    top: 25%;
+    transform: translateY(-50%);
+    background-color: #D9FDD3; /* Green color */
+    color: rgb(92, 92, 92);
+    padding: 5px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+    z-index: 999;
+}
+
+#sharess:hover {
+    background-color: #D9FDD3;
+    padding-left: 25px; /* Slight animation effect on hover */
+}
+
+/* Hide on smaller screens when scrolling */
+@media (max-width: 768px) {
+    #sharess {
+        display: none;
+        opacity: 70%;
+    }
+}
+
+
+/* Articles Container */
+.articles-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Article Card */
+.article-card {
+    background: white;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+}
+
+.article-card:hover {
+    transform: translateY(-5px);
+}
+
+.article-card a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Thumbnail */
+.article-thumbnail {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Article Details */
+.article-details {
+    padding: 15px;
+}
+
+.article-details h2 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.article-excerpt {
+    font-size: 16px;
+    color: #666;
+}
+
+.article-meta {
+    font-size: 14px;
+    color: #999;
+    margin-top: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .article-card {
+        width: 95%;
+    }
+
+    .article-thumbnail {
+        height: 150px;
+    }
+}
+
+/* Article Container */
+.article-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Thumbnail */
+.article-thumbnail {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Article Meta */
+.article-meta {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Article Content */
+.article-content {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Waterfall Text */
+.waterfall-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2a2a2a;
+    text-align: center;
+    line-height: 2.5;
+    margin-top: 20px;
+    background: linear-gradient(to right, #f3f3f3, #e0e0e0);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .article-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .waterfall-text {
+        font-size: 18px;
+        padding: 10px;
+    }
+}
+
